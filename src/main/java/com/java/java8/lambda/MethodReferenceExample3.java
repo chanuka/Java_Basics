@@ -15,7 +15,7 @@ public class MethodReferenceExample3 {
         Functional lambda = (String s, List<String> l) -> {
             example.method(s, l);
         };
-        lambda.funct("another string", strings);
+        lambda.funct("another string ereee", strings);
         System.out.println("List now contains: " + strings);
     }
 
