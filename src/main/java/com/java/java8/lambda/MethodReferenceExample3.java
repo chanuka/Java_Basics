@@ -24,7 +24,7 @@ public class MethodReferenceExample3 {
     }
 
     private static void method(String value, List<String> toAddTo) {
-        System.out.println("adding");
+        System.out.println("adding--");
         toAddTo.add(value);
     }
 }
