@@ -2,6 +2,7 @@ package com.java.basics;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Locale;
 
 public class SortAString {
 
@@ -46,6 +47,12 @@ public class SortAString {
         System.out.println("Input String : " + inputString3);
         System.out.println("Output String : " + outputString3);
 
+        // method 04-------------------------------------------------------
+        String inputString4 = "GeeksforGeeks";
+        String outputString4 = sortStringJava8(inputString4);
+
+        System.out.println("Input String : " + inputString4);
+        System.out.println("Output String : " + outputString4);
     }
 
     public static String sortString(String inputString) {
@@ -77,5 +84,12 @@ public class SortAString {
             sb.append(c.charValue());
 
         return sb.toString();
+    }
+
+    public static String sortStringJava8(String inputString){
+        return inputString.toLowerCase().chars()
+                .sorted()
+                .collect(StringBuilder :: new ,StringBuilder :: appendCodePoint,StringBuilder :: append)
+                .toString();
     }
 }
