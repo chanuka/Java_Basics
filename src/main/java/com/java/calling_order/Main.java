@@ -27,6 +27,10 @@ public class Main {
 
     private static void collectionTest() {
 
+        Map<String , fff<Long>> test = new HashMap<String,fff<Long>>();
+
+
+
         List<Integer> al = new ArrayList<>(5);
 
         Queue<Integer> t = new LinkedList<>();
@@ -48,4 +52,9 @@ public class Main {
 
         t.forEach(System.out::println);
     }
+
+}
+
+class fff<E>{
+
 }
